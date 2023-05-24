@@ -1,0 +1,23 @@
+.about_me{
+    position: sticky;
+    height: calc(100vh - 130px);
+
+    blockquote{
+        margin: 0;
+        color: #94a3b8;
+        font-size: 1.1rem;
+        text-align: left;
+        width: 35rem;
+    }
+}
+
+.socials{
+    margin-top: 4rem;
+    a{
+        margin-right: 1rem;
+        img{
+            width: 3rem;
+            height: 3rem;
+        }
+    }
+}

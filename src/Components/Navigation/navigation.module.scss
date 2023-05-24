@@ -1,0 +1,16 @@
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    color: white;
+
+    a{
+        cursor: pointer;
+        text-decoration: none;
+        color: inherit;
+        &:hover{
+            color: rgb(167, 150, 150);
+        }
+    }
+}
