@@ -3,3 +3,9 @@
     padding: 1rem 4rem;
     justify-content: space-between;
 }
+
+@media (max-width: 990px) {
+    .header{
+        padding: 1rem 2rem;
+    }
+}

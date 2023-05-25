@@ -23,3 +23,27 @@
         }
     }
 }
+
+@media (max-width: 1120px) {
+  .about_me{
+    blockquote{
+        width: 30rem;
+    }
+  }
+}
+
+@media (max-width: 1035px) {
+    .about_me{
+      blockquote{
+          width: 28rem;
+      }
+    }
+}
+
+@media (max-width: 990px) {
+    .about_me{
+      blockquote{
+          width: 100%;
+      }
+    }
+}

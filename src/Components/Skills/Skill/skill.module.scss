@@ -13,3 +13,35 @@
         color: #ff1dce;
     }
 }
+
+@media (max-width: 579px) {
+    .skill{
+        img{
+            max-width: 6rem;
+        }
+    }
+}
+
+@media (max-width: 445px) {
+    .skill{
+        img{
+            max-width: 7rem;
+        }
+    }
+}
+
+@media (max-width: 399px) {
+    .skill{
+        img{
+            max-width: 10rem;
+        }
+    }
+}
+
+@media (max-width: 390px) {
+    .skill{
+        img{
+            max-width: 6rem;
+        }
+    }
+}
