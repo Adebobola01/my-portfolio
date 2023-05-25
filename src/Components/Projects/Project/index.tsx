@@ -11,18 +11,30 @@ interface ProjectType {
 
 const Project = ({ name, image, description, stacks }: ProjectType) => {
     
-    const stacksContent: any = stacks.forEach((s: string) => (
-        <div className={styles.stack} >
-
-        </div>
+    const stacksContent: any = stacks.map((s: string) => (
+        <span>{s}</span>
     ))
+
+    console.log(stacksContent, stacks)
     
     return (
         <div className={styles.container}>
-            <img src={itachi} alt={name} />
-            <p className={styles.text}>{description}</p>
-            <div className={styles.stacks}>
-                {stacksContent}
+
+            <div className={styles.img_container}>
+                <img src={itachi} alt={name} />     
+            </div>
+            <div className={styles.details}>
+                <h3>{name}</h3>
+                <p className={styles.text}>{description}</p>
+                <div className={styles.stacks}>
+                    <div className={styles.stacks_container}>
+                        {stacksContent}
+                    </div>
+                    <div className={styles.nav}>
+                        <a href="">Live</a>
+                        <a href="">code</a>
+                    </div>
+                </div>
             </div>
         </div>
     )

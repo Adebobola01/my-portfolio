@@ -4,6 +4,7 @@ import Navbar from "../Navbar";
 import Intro from "../Intro";
 import Hero from "../hero";
 import Skills from "../Skills";
+import Projects from "../Projects";
 
 
 const Layout = () => {
@@ -15,7 +16,8 @@ const Layout = () => {
                 <Intro />
                 <div className={styles.main_container}>
                     <Hero />
-                    <Skills/>
+                    <Skills />
+                    <Projects/>
                 </div>
             </main>
         </>

@@ -31,8 +31,8 @@ const Skills = () => {
                 <Skill image={htmlLogo} toolName="Web3JS" />
                 <Skill image={htmlLogo} toolName="EthersJS" />
                 <Skill image={htmlLogo} toolName="Git" />
-                <Skill image={htmlLogo} toolName="React" />
-                <Skill image={htmlLogo} toolName="React" />
+                <Skill image={htmlLogo} toolName="Hardhat" />
+                <Skill image={htmlLogo} toolName="truffle" />
                 <Skill image={htmlLogo} toolName="React" />
             </div>
         </section>
