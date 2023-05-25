@@ -7,17 +7,20 @@
 
 
     &_container{
-      padding-left: 4rem;
-        overflow-y: scroll;
+      padding-left: 8rem;
+      overflow-y: scroll;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
 
-        &::-webkit-scrollbar {
-            width: 1px;
-          }
-          &::-webkit-scrollbar-track {
-            background: transparent;
-          }
-          &::-webkit-scrollbar-thumb {
-            background: gray;
-          }
+      &::-webkit-scrollbar {
+          width: 1px;
+        }
+        &::-webkit-scrollbar-track {
+          background: transparent;
+        }
+        &::-webkit-scrollbar-thumb {
+          background: gray;
+        }
     }
 }

@@ -1,11 +1,17 @@
 .container{
-    width: 20rem;
+    width: 18rem;
     background-color: rgba(148, 163, 184, .2);
     border-radius: 1rem;
     color: #ffffff75;
     // padding: 1rem;
     margin: 0 1rem 1rem 0;
-    
+    cursor: pointer;
+
+    &:hover{
+        img{
+            transform: scale(1.1);
+        }
+    }
 
 }
 
@@ -15,7 +21,7 @@
     padding: .2rem;
     // border-radius: 1rem;
     border-radius: 1rem 1rem 0 0;
-
+    overflow: hidden;
 
     img{
         width: 100%;
@@ -81,9 +87,24 @@
         font-weight: 400;
         text-align: center;
         border-radius: .4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         &:not(:last-of-type){
             margin-bottom: .2rem;
+        }
+
+        &:hover{
+            opacity: .8;
+            svg{
+                transform: translateY(-.1rem);
+            }
+        }
+
+        svg{
+            width: .8rem;
+            margin-left: .2rem;
         }
     }
 }
