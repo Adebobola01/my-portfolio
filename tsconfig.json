@@ -17,5 +17,9 @@
     "jsx": "react-jsx",
     "types": ["@types/jest"]
   },
-  "include": ["src", "src/declaration.d.ts"]
+  "include": ["src", "src/declaration.d.ts"],
+    "exclude": [
+    "test.ts",
+    "**/*.spec.ts"
+  ]
 }
