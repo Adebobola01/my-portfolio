@@ -1,5 +1,5 @@
 .main{
-    margin: 4rem 4rem 0;
+    margin: 4rem 4rem;
     display: flex;
     justify-content: space-between;
     height: calc(100vh - 130px);
@@ -34,7 +34,8 @@
 @media (max-width: 990px) {
   .main{
     flex-direction: column;
-    margin: 2rem 2rem 0;
+    margin: 3rem 2rem;
+    height: auto;
 
     &_container{
       display: block;

@@ -1,0 +1,25 @@
+.socials{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: flex-start;
+    a{
+        margin-right: 1rem;
+        img{
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+}
+
+.mobile{
+    display: none;
+}
+
+@media (max-width: 990px) {
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: flex;
+    }
+}

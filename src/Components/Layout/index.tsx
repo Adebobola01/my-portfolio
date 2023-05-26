@@ -5,6 +5,7 @@ import Intro from "../Intro";
 import Hero from "../hero";
 import Skills from "../Skills";
 import Projects from "../Projects";
+import Socials from "../socials";
 
 
 const Layout = () => {
@@ -17,7 +18,8 @@ const Layout = () => {
                 <div className={styles.main_container}>
                     <Hero />
                     <Skills />
-                    <Projects/>
+                    <Projects />
+                    <Socials type="mobile" />
                 </div>
             </main>
         </>

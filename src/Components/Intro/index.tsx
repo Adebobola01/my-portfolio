@@ -2,9 +2,8 @@ import React from "react";
 import styles from "./intro.module.scss";
 import itachImg from "../../assets/images/itachi.png";
 import devIcon from "../../assets/images/dev-icon.jpg";
-import twitterLogo from "../../assets/images/Twitter-logo.svg";
-import linkedInLogo from "../../assets/images/icons8-linkedin-480.svg";
-import githubLogo from "../../assets/images/iconmonstr-github-5.svg";
+import Socials from "../socials";
+
 const Intro = () => {
 
     const style = {
@@ -31,13 +30,7 @@ const Intro = () => {
                 Let's collaborate and create impactful decentralized applications
                 that redefine the way we interact and transact in the digital world.
             </blockquote>
-            <div>
-            <div className={styles.socials}>
-                <a href="https://www.linkedin.com/in/adebobola-oyedunmade-34a464218/"><img src={linkedInLogo} /></a>
-                <a href="https://twitter.com/AdebobolaMuhyd1"><img src={twitterLogo} /></a>
-                <a href="https://github.com/Adebobola01/TheBig3-minting-website"><img src={githubLogo}/></a>
-            </div>
-            </div>
+            <Socials type="desktop"/>
         </section>
     )
 }
