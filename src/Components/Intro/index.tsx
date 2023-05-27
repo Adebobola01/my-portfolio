@@ -20,7 +20,7 @@ const Intro = () => {
                 <p>Hi, my name is</p>
                 <h1>Adebobola Oyedunmade</h1>
                     A software developer with 2 years of experience With a strong background in
-                    blockchain technology and decentralized applications (dapps).
+                    blockchain technologies and decentralized applications (dapps).
                 {/* <br/>
                 <br/>
                 I possess an in-depth understanding of smart contracts and the Ethereum blockchain network, enabling me to build secure
