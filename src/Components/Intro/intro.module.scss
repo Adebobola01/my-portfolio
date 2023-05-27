@@ -1,4 +1,4 @@
-.about_me{
+.intro{
   position: sticky;
   height: calc(100vh - 130px - 4rem);
   width: 40%;
@@ -12,7 +12,7 @@
     color: #94a3b8;
     font-size: 1.1rem;
     text-align: left;
-    width: 80%;
+    width: 100%;
 
     p{
       color: #ff1dce;
@@ -28,26 +28,30 @@
 }
 
 
+@media (max-width: 1220px) {
+  .about_me{
+    // width: 50%;
+  }
+}
+
+@media (max-width: 1180px) {
+  .intro{
+    width: 24rem;
+  }
+}
 
 @media (max-width: 1120px) {
-  .about_me{
+  .intro{
     blockquote{
         width: 100%;
     }
   }
 }
 
-@media (max-width: 1035px) {
-    .about_me{
-      blockquote{
-          width: 28rem;
-      }
-    }
-}
-
-@media (max-width: 990px) {
-    .about_me{
+@media (max-width: 1045px) {
+    .intro{
         height: auto;
+        // padding: 0;
       blockquote{
           width: 100%;
       }

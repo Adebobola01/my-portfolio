@@ -15,7 +15,7 @@ const Intro = () => {
     }
     
     return (
-        <section id="about" className={styles.about_me} >
+        <section id="about" className={styles.intro} >
             <blockquote>
                 <p>Hi, my name is</p>
                 <h1>Adebobola Oyedunmade</h1>
