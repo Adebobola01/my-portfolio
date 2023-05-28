@@ -1,5 +1,6 @@
 .intro{
   position: sticky;
+  top: calc(4rem + 70px);
   height: calc(100vh - 130px - 4rem);
   width: 40%;
   display: flex;
