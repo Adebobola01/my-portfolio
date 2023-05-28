@@ -8,7 +8,7 @@ const Copyright = () => {
     }
     
     return (
-        <p style={style}>© Adebobola Oyedunmade 2023.</p>
+        <p style={style}>© Adebobola Oyedunmade 2023. All rights reserved</p>
     )
 }
 

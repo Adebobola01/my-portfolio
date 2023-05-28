@@ -29,7 +29,6 @@ const Layout = () => {
                     <Skills />
                     <Projects />
                     <Socials type="mobile" />
-                    <Copyright/>
                     <Drawer open={open} />
                 </div>
             </main>

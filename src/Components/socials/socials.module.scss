@@ -9,6 +9,12 @@
             height: 2rem;
         }
     }
+
+    &_container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 .mobile{
