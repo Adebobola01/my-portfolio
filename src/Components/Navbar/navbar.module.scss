@@ -4,6 +4,13 @@
     justify-content: space-between;
 }
 
+@media(min-width: 1400px){
+    .header{
+        max-width: 1400px;
+        margin: auto;
+    }
+}
+
 @media (max-width: 900px) {
     .header{
         padding: 1rem 2rem;

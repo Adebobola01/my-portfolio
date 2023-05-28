@@ -31,3 +31,23 @@
     }
 }
 
+@media (max-width: 634px) {
+    .skill{
+        width: 20%;
+        padding: .4rem;
+    }
+}
+
+@media (max-width: 490px) {
+    .skill{
+        width: 7rem;
+        padding: .4rem;
+    }
+}
+
+@media (max-width: 343px) {
+    .skill{
+        padding: .5rem;
+    }
+}
+

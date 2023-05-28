@@ -6,6 +6,7 @@
     position: relative;
     // width: 40%;
     margin: 0;
+    scroll-behavior: smooth;
     // overflow-y: hidden;
     // padding-bottom: 4rem;
     
@@ -29,6 +30,13 @@
           background: gray;
         }
     }
+}
+
+@media(min-width: 1400px){
+  .main{
+    max-width: 1400px;
+    margin: auto;
+  }
 }
 
 @media (max-width: 1180px) {
