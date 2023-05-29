@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./project.module.scss";
-import itachi from "../../../assets/images/dev-icon.jpg";
 
 interface ProjectType {
     name: string,
@@ -22,7 +21,7 @@ const Project = ({ name, image, description, stacks, liveLink, codeLink }: Proje
     return (
         <div className={styles.container}>
             <div className={styles.img_container}>
-                <img src={itachi} alt={name} />     
+                <img src={image} alt={name} />     
             </div>
             <div className={styles.details}>
                 <h3>{name}</h3>
