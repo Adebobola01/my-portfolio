@@ -3,7 +3,7 @@ import styles from "./projects.module.scss";
 import Project from "./Project";
 import itaImg from "../../assets/images/dev-icon.jpg";
 import parodyImg from "../../assets/images/parody.jpg";
-
+import big3Img from "../../assets/images/big3 prev.jpg";
 
 const Projects = () => {
     const domRef: any = useRef();
@@ -25,7 +25,7 @@ const Projects = () => {
             <h2>My Projects</h2>
             <div className={styles.container}>
                 <Project name="Uniswap Parody" image={parodyImg} description="A UI clone of the swapping protocol uniswap" stacks={["React", "Typescript", "SCSS", ]} codeLink="https://github.com/Adebobola01/uniswap-parody" />
-                <Project name="Uniswap Parody" image={parodyImg} description="A UI clone of the swapping protocol uniswap" stacks={["React", "Typescript", "SCSS", ]} codeLink="https://github.com/Adebobola01/uniswap-parody"/>
+                <Project name="big3 Marketplace" image={big3Img} description="A NFT marketPlace." stacks={["React", "Typescript", "SCSS", ]} codeLink="https://github.com/Adebobola01/big3-react" liveLink="https://big3.onrender.com/" />
                 <Project name="Uniswap Parody" image={parodyImg} description="A UI clone of the swapping protocol uniswap" stacks={["React", "Typescript", "SCSS", ]} codeLink="https://github.com/Adebobola01/uniswap-parody"/>
                 <Project name="Uniswap Parody" image={parodyImg} description="A UI clone of the swapping protocol uniswap" stacks={["React", "Typescript", "SCSS", ]} codeLink="https://github.com/Adebobola01/uniswap-parody"/>
                 <Project name="Uniswap Parody" image={parodyImg} description="A UI clone of the swapping protocol uniswap" stacks={["React", "Typescript", "SCSS", ]} codeLink="https://github.com/Adebobola01/uniswap-parody"/>
