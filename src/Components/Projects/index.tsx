@@ -1,13 +1,27 @@
-import React from "react";
+import React, {useState, useRef, useEffect} from "react";
 import styles from "./projects.module.scss";
 import Project from "./Project";
 import itaImg from "../../assets/images/dev-icon.jpg";
 import parodyImg from "../../assets/images/parody.jpg";
 
 
-const Projects= ()=>{
+const Projects = () => {
+    const domRef: any = useRef();
+    const [isVisible, setVisible] = useState(false);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                // console.log("intersecting", isVisible)
+                return setVisible(e.isIntersecting)
+            })
+        });
+        observer.observe(domRef.current);
+        return () =>observer.unobserve(domRef.current)
+    }, [])
+    console.log(isVisible)
     return (
-        <section className={styles.projects} id="projects">
+        <section className={`${styles.projects} ${ isVisible ? styles.isVisible : null}`} id="projects" ref={domRef}>
             <h2>My Projects</h2>
             <div className={styles.container}>
                 <Project name="Uniswap Parody" image={parodyImg} description="A UI clone of the swapping protocol uniswap" stacks={["React", "Typescript", "SCSS", ]} codeLink="https://github.com/Adebobola01/uniswap-parody" />

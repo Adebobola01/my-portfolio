@@ -1,21 +1,18 @@
-.projects{
+.about{
+    text-align: left;
+    margin-top: 4rem;
     opacity: 0;
     transform: translateY(22vh);
     visibility: hidden;
     transition: opacity 0.6s ease-out, transform 1.2s ease-out;
     will-change: opacity, visibility;
-    
     h2{
-        color: white;
-        text-align: left;
-        margin: 0 0 2rem;
+        color: #fff;
+        margin-top: 0;
     }
-}
-
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    P{
+        color: #94a3b8;
+    }
 }
 
 .isVisible {

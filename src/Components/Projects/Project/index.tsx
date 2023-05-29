@@ -15,8 +15,6 @@ const Project = ({ name, image, description, stacks, liveLink, codeLink }: Proje
     const stacksContent: any = stacks.map((s: string) => (
         <span>{s}</span>
     ))
-
-    console.log(stacksContent, stacks)
     
     return (
         <div className={styles.container}>

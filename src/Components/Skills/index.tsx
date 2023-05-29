@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useRef, useEffect} from "react";
 import styles from "./skills.module.scss";
 import Skill from "./Skill";
 // import htmlLogo from "../../assets/images/itachi.png";
@@ -23,11 +23,23 @@ import truffleLogo from "../../assets/images/truffle-seeklogo.com.svg";
 
 
 const Skills = () => {
+    const domRef: any = useRef();
+    const [isVisible, setVisible] = useState(false);
 
+    useEffect(() => {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                // console.log("intersecting", isVisible)
+                return setVisible(e.isIntersecting)
+            })
+        });
+        observer.observe(domRef.current);
+        return () =>observer.unobserve(domRef.current)
+    }, [])
 
     
     return (
-        <section className={styles.skills} id="skills" >
+        <section className={`${styles.skills} ${ isVisible ? styles.isVisible : null}`} id="skills" ref={domRef} >
             <h2>My Skills</h2>
             <div className={styles.skills_container} >
                 <Skill image={htmlLogo} toolName="HTML" />
