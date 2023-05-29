@@ -18,7 +18,7 @@ const Socials = ({type}: propType) => {
             <div className={styles.socials}>
                 <a href="https://www.linkedin.com/in/adebobola-oyedunmade-34a464218/"><img src={linkedInLogo} /></a>
                 <a href="https://twitter.com/AdebobolaMuhyd1"><img src={twitterLogo} /></a>
-                <a href="https://github.com/Adebobola01/TheBig3-minting-website"><img src={githubLogo}/></a>
+                <a href="https://github.com/Adebobola01"><img src={githubLogo}/></a>
             </div>
             <Copyright/>
         </div>
