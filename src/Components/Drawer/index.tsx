@@ -11,12 +11,7 @@ const Drawer = ({ open }: propType) => {
     
     return (
         <div className={`${styles.drawer} ${ open === true ? styles.open_drawer : null}`} >
-            <a href="#skills" onClick={(e) => {
-                e.preventDefault();
-                
-                // target.getAttribute("href");
-                console.log(e);
-            }} >
+            <a href="#skills">
                 Skills
             </a>
             <a href="#projects" >

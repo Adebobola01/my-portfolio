@@ -14,14 +14,16 @@ import Copyright from "../Copyright";
 const Layout = () => {
 
     const [open, setOpen] = useState(false);
+    const [toggleOpen, setToggleOpen] = useState(false)
 
     const openDrawer = () => {
         setOpen(!open);
+        setToggleOpen(!toggleOpen)
     }
     
     return (
         <>
-            <Navbar toggleClick={openDrawer} />
+            <Navbar toggleClick={openDrawer} toggleOpen={toggleOpen} />
             <main className={styles.main} >
                 <Intro />
                 <div className={styles.main_container}>

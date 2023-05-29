@@ -7,7 +7,7 @@ const Navbar = (props: any) => {
     return (
         <header className={styles.header} >
             <Logo />
-            <Navigation toggleClick={props.toggleClick} />
+            <Navigation toggleClick={props.toggleClick} toggleOpen={props.toggleOpen} />
         </header>
     )
 }

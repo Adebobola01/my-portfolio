@@ -15,35 +15,27 @@ const Navigation = (props: any) => {
     return (
         <nav className={styles.navigation}>
             <div>
-                <Link
-                    to="home"
-                    smooth={true}
+                <a
+                    href="/"
                 >
                     Home
-                </Link>
-                <Link
-                    to="about"
-                    smooth={true}
+                </a>
+                <a
+                    href="#about"
                 >
                     About
-                </Link><Link
-                    to="skills"
-                    smooth={true}
+                </a><a
+                    href="#skills"
                 >
                     Skills
-                </Link>
-                <Link
-                    to="projects"
-                    smooth={true}
-                    spy={true}
-                    offset={50}
-                    duration={500}
+                </a>
+                <a
+                    href="#projects"
                 >
                     Projects
-                </Link>
-                <a onClick={scrollToB} >btn</a>
+                </a>
             </div>
-            <ToggleBtn click={props.toggleClick} />
+            <ToggleBtn click={props.toggleClick} opened={props.toggleOpen} />
         </nav>
     )
 }

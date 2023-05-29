@@ -1,3 +1,8 @@
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
 body {
   margin: 0;
   /* font-family: 'open', sans-serif; */
