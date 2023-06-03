@@ -24,7 +24,7 @@ const Projects = () => {
         <section className={`${styles.projects} ${ isVisible ? styles.isVisible : null}`} id="projects" ref={domRef}>
             <h2>My Projects</h2>
             <div className={styles.container}>
-                <Project name="Uniswap Parody" image={parodyImg} description="A UI clone of the swapping protocol uniswap" stacks={["React", "Typescript", "SCSS", ]} codeLink="https://github.com/Adebobola01/uniswap-parody" />
+                <Project name="Uniswap Parody" image={parodyImg} description="A UI clone of the swapping protocol uniswap" stacks={["React", "Typescript", "SCSS", ]} codeLink="https://github.com/Adebobola01/uniswap-parody" liveLink="https://uniswap-parody.vercel.app/" />
                 <Project name="big3 Marketplace" image={big3Img} description="A NFT marketPlace." stacks={["React", "Typescript", "SCSS", ]} codeLink="https://github.com/Adebobola01/big3-react" liveLink="https://big3.onrender.com/" />
                 <Project name="Uniswap Parody" image={parodyImg} description="A UI clone of the swapping protocol uniswap" stacks={["React", "Typescript", "SCSS", ]} codeLink="https://github.com/Adebobola01/uniswap-parody"/>
                 <Project name="Uniswap Parody" image={parodyImg} description="A UI clone of the swapping protocol uniswap" stacks={["React", "Typescript", "SCSS", ]} codeLink="https://github.com/Adebobola01/uniswap-parody"/>
