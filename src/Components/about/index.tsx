@@ -27,8 +27,8 @@ const About = () => {
                 <br/>
                 <br/>
                 If you are looking to bring your ideas to life or need assistance in building a web3 dapp, I am here to help.
-                Let's collaborate and create impactful decentralized applications
-                that redefine the way we interact and transact in the digital world.
+                {/* Let's collaborate and create impactful decentralized applications
+                that redefine the way we interact and transact in the digital world. */}
             </p>
         </section>
     )

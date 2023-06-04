@@ -10,20 +10,24 @@
 
   blockquote{
     margin: 0;
-    color: #94a3b8;
     font-size: 1.1rem;
     text-align: left;
     width: 100%;
 
-    p{
+    span{
       color: #ff1dce;
       font-size: 1.2rem;
-    }
 
+    }
+    
     h1{
-      margin-top: 0;
+      margin-top: 1rem;
       color: white;
       font-size: 2rem;
+    }
+
+    p{
+      color: #94a3b8;
     }
   }
 
@@ -63,19 +67,33 @@
     blockquote{
         width: 100%;
     }
+
+    &_btn{
+      display: none;
+    }
   }
 }
 
 @media (max-width: 1045px) {
-    .intro{
-        height: auto;
-        position: relative;
-        top: 0;
-        // padding: 0;
-      blockquote{
-          width: 100%;
-      }
+  .intro{
+    height: auto;
+    position: relative;
+    padding: 0;
+    top: 0;
+    // padding: 0;
+
+    blockquote{
+      width: 100%;
     }
+
+    p{
+      display: none;
+    }
+
+    h1{
+      margin-bottom: 0;
+    }
+  }
 }
 
 @media (max-width: 420px) {
@@ -97,7 +115,6 @@
 
 @media (max-width: 330px) {
   .intro{
-
     blockquote{
       font-size: .8rem;
       h1{

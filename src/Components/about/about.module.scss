@@ -15,6 +15,14 @@
     }
 }
 
+@media (max-width: 1045px) {
+    .about{
+        h2{
+            display: none;
+        }
+    }
+}
+
 .isVisible {
     opacity: 1;
     transform: none;

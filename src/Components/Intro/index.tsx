@@ -17,10 +17,12 @@ const Intro = () => {
     return (
         <section className={styles.intro} >
             <blockquote>
-                <p>Hi, my name is</p>
+                <span>Hi, my name is</span>
                 <h1>Adebobola Oyedunmade</h1>
+                <p>
                     A software developer with 2 years of experience With a strong background in
                     blockchain technologies and decentralized applications (dapps).
+                </p>
                 {/* <br/>
                 <br/>
                 I possess an in-depth understanding of smart contracts and the Ethereum blockchain network, enabling me to build secure
