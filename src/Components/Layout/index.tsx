@@ -9,6 +9,7 @@ import Socials from "../socials";
 import Drawer from "../Drawer";
 import Copyright from "../Copyright";
 import About from "../about";
+import Contact from "../Contact";
 
 
 const Layout = () => {
@@ -28,9 +29,10 @@ const Layout = () => {
                 <Intro />
                 <div className={styles.main_container}>
                     <Hero />
+                    <About />
                     <Skills />
                     <Projects/>
-                    <About/>
+                    <Contact/>
                     <Socials type="mobile" />
                     <Drawer open={open} />
                 </div>

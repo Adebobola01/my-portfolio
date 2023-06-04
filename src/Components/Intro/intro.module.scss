@@ -26,6 +26,23 @@
       font-size: 2rem;
     }
   }
+
+  &_btn{
+    padding: 8px 6px;
+    background-color: transparent;
+    color: #ff1dce;
+    font-size: 1.1rem;
+    border: 1px solid #ff1dce;
+    border-radius: 4px;
+    width: 8rem;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover{
+      background-color: #ff1dce;
+      color: #171717;
+    }
+  }
 }
 
 

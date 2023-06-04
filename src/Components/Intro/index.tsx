@@ -32,6 +32,7 @@ const Intro = () => {
                 Let's collaborate and create impactful decentralized applications
                 that redefine the way we interact and transact in the digital world. */}
             </blockquote>
+            <a href="#contact-me" className={styles.intro_btn}>Contact Me</a> 
             <Socials type="desktop"/>
         </section>
     )
