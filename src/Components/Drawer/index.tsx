@@ -2,10 +2,11 @@ import React from "react";
 import styles from "./drawer.module.scss";
 
 type propType = {
-    open: boolean
+    open: boolean,
+    link: boolean
 }
 
-const Drawer = ({ open }: propType) => {
+const Drawer = ({ open, link }: propType) => {
 
     console.log(open)
     
@@ -17,8 +18,8 @@ const Drawer = ({ open }: propType) => {
             <a href="#projects" >
                 Projects
             </a>
-            <a href="#contact-me" >
-                Contact 
+            <a href={`${!link ? "#contact-me" : "#about"}`} >
+                {!link ? "Contact" : "About"}
             </a>
         </div>
     )

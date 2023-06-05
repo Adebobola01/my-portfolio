@@ -1,7 +1,7 @@
 import React, {useEffect, useRef, useState} from "react";
 import styles from "./about.module.scss";
 
-const About = () => {
+const About = (props: any) => {
     const domRef: any = useRef();
     const [isVisible, setVisible] = useState(false);
 
@@ -9,13 +9,15 @@ const About = () => {
         const observer = new IntersectionObserver(entries => {
             entries.forEach(e => {
                 // console.log("intersecting", isVisible)
+                if (e.isIntersecting) {                    
+                    props.handler(false);
+                }
                 return setVisible(e.isIntersecting)
             })
         });
         observer.observe(domRef.current);
         return () => observer.unobserve(domRef.current)
     }, [])
-    console.log(isVisible)
     
     return (
         <section className={`${styles.about} ${ isVisible ? styles.isVisible : null}`} ref={domRef} id="about" >

@@ -15,10 +15,15 @@ const Layout = () => {
 
     const [open, setOpen] = useState(false);
     const [toggleOpen, setToggleOpen] = useState(false)
+    const [drawerLink, setDrawerLink] = useState<boolean>(false);
 
     const openDrawer = () => {
         setOpen(!open);
         setToggleOpen(!toggleOpen)
+    }
+
+    const drawerLinkHandler = (val:boolean) => {
+        setDrawerLink(val);
     }
     
     return (
@@ -28,12 +33,12 @@ const Layout = () => {
                 <Intro />
                 <div className={styles.main_container}>
                     <Hero />
-                    <About />
+                    <About handler={drawerLinkHandler} />
                     <Skills />
                     <Projects/>
-                    <Contact/>
+                    <Contact handler={drawerLinkHandler} />
                     <Socials type="mobile" />
-                    <Drawer open={open} />
+                    <Drawer open={open} link={drawerLink} />
                 </div>
             </main>
         </>
