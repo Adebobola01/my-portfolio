@@ -22,9 +22,9 @@ const Contact = (props: any) => {
         <section id="contact-me" className={styles.contact} ref={domRef} >
             <h2>Contact Me</h2>
             <p>Got a question, proposal or want to work together on something or just want to say HI? feel free to reach out. 👇</p>
-            <span>
-                Say <a href="mailto:adebobolamuhydeen@gmail.com">Hi</a>👋  
-            </span>
+            <a href="mailto:adebobolamuhydeen@gmail.com">
+                Say <span >Hi</span>👋  
+            </a>
         </section>
     )
 }

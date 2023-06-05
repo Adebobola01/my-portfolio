@@ -1,5 +1,7 @@
 .contact{
     text-align: left;
+    height: auto;
+    box-sizing: content-box;
     margin-top: 3rem;
     h2{
         color: #fff;
@@ -7,13 +9,22 @@
 
     P{
         color: #94a3b8;
+        margin: 0 0 1.5rem;
     }
-    span{
+    a{
         color: #fff;
+        text-decoration: none;
+        border: 1px solid #ff1dce;
+        margin-top: 1.5rem;
+        padding: .3rem;
+        border-radius: 3px;
+
+        &:hover{
+            opacity: .7;
+        }
     }
 
-    a{
-        text-decoration: none;
+    span{
         color: #ff1dce;
 
         &:hover{
