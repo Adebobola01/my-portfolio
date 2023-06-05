@@ -7,7 +7,7 @@ import big3Img from "../../assets/images/big3 prev.jpg";
 
 const Projects = () => {
     const domRef: any = useRef();
-    const [isVisible, setVisible] = useState(false);
+    const [isVisible, setVisible] = useState<boolean>(false);
 
     useEffect(() => {
         const observer = new IntersectionObserver(entries => {

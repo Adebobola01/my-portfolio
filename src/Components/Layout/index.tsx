@@ -7,7 +7,6 @@ import Skills from "../Skills";
 import Projects from "../Projects";
 import Socials from "../socials";
 import Drawer from "../Drawer";
-import Copyright from "../Copyright";
 import About from "../about";
 import Contact from "../Contact";
 

@@ -17,8 +17,8 @@ const Drawer = ({ open }: propType) => {
             <a href="#projects" >
                 Projects
             </a>
-            <a href="#about" >
-                About 
+            <a href="#contact-me" >
+                Contact 
             </a>
         </div>
     )
