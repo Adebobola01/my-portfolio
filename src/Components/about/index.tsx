@@ -27,15 +27,17 @@ const About = (props: any) => {
     >
       <h2>About Me</h2>
       <p>
-        I possess an in-depth understanding of smart contracts and the Ethereum
-        blockchain network, enabling me to build secure decentralized
-        applications. My expertise lies in developing frontend and backend
-        solutions, integrating blockchain protocols, and implementing smart
-        contract functionalities. Software developer with three and a half years
-        of experience developing and managing websites and web applications,
-        with an in-depth understanding of smart contracts and the Ethereum
-        blockchain network, enabling me to build secure decentralized
-        applications.
+        {/* I possess an in-depth understanding of smart contracts and the
+          Ethereum blockchain network, enabling me to build secure decentralized
+          applications. My expertise lies in developing frontend and backend
+          solutions, integrating blockchain protocols, and implementing smart
+          contract functionalities.  */}
+        Software developer with three and a half years of experience developing
+        and managing websites and web applications, with an in-depth
+        understanding of smart contracts and the Ethereum blockchain network,
+        enabling me to build secure decentralized applications. My expertise
+        lies in developing frontend and backend solutions, integrating
+        blockchain protocols, and implementing smart contract functionalities.
         <br />
         <br />
         If you are looking to bring your ideas to life or need assistance in
