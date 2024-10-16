@@ -19,7 +19,7 @@ const Intro = () => {
         <span>Hi, my name is</span>
         <h1>Adebobola Oyedunmade</h1>
         <p>
-          A software developer with 3.5 years of experience With a strong
+          A software developer with 3.5 years of experience with a strong
           background in blockchain technologies and decentralized applications
           (dapps).
         </p>
