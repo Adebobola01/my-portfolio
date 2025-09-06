@@ -36,14 +36,6 @@ const Projects = () => {
       <h2>My Projects</h2>
       <div className={styles.container}>
         <Project
-          liveLink="https://jounal-app.vercel.app/"
-          stacks={["Typescript", "Nodejs"]}
-          codeLink="https://github.com/EDT-JOURNAL/journal-server"
-          name="EDT Journal"
-          image={edtImg}
-          description="A bloging website"
-        />
-        <Project
           liveLink="certgo.app"
           stacks={["Javascript", "Nodejs", "react"]}
           codeLink="#"
@@ -76,6 +68,14 @@ const Projects = () => {
           stacks={["React", "Typescript", "SCSS"]}
           codeLink="https://github.com/Adebobola01/big3-react"
           liveLink="https://big3.onrender.com/"
+        />
+        <Project
+          liveLink="https://jounal-app.vercel.app/"
+          stacks={["Typescript", "Nodejs"]}
+          codeLink="https://github.com/EDT-JOURNAL/journal-server"
+          name="EDT Journal"
+          image={edtImg}
+          description="A bloging website"
         />
         <Project
           name="Forkify"
