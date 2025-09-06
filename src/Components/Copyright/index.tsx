@@ -5,7 +5,7 @@ const Copyright = () => {
     color: "white",
   };
 
-  return <p style={style}>© Adebobola Oyedunmade 2024. All rights reserved</p>;
+  return <p style={style}>© Adebobola Oyedunmade 2025. All rights reserved</p>;
 };
 
 export default Copyright;
