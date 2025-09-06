@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./about.module.scss";
-
+import myImage from "../../assets/images/adebobola.png";
 const About = (props: any) => {
   const domRef: any = useRef();
   const [isVisible, setVisible] = useState(false);
@@ -25,7 +25,13 @@ const About = (props: any) => {
       ref={domRef}
       id="about"
     >
+      <img src={myImage} alt="Adebobola's Image" className={styles.about_img} />
       <h2>About Me</h2>
+      <blockquote>
+        <span>Hi, my name is</span>
+        <h1>Adebobola Oyedunmade</h1>
+        <p>I'm a software developer👨‍💻</p>
+      </blockquote>
       <p>
         {/* I possess an in-depth understanding of smart contracts and the
           Ethereum blockchain network, enabling me to build secure decentralized
