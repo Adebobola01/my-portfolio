@@ -36,7 +36,7 @@ const Projects = () => {
       <h2>My Projects</h2>
       <div className={styles.container}>
         <Project
-          liveLink="certgo.app"
+          liveLink="https://certgo.app"
           stacks={["Javascript", "Nodejs", "react"]}
           codeLink="#"
           name="CertGo"
