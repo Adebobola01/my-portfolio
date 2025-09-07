@@ -27,10 +27,19 @@
   visibility: visible;
 }
 
-@media (max-width: 465px) {
+@media (max-width: 475px) {
   .skills {
     &_container {
       justify-content: space-between;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .skills {
+    &_container {
+      //   justify-content: space-between;
+      gap: 1rem;
     }
   }
 }
