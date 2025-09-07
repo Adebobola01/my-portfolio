@@ -1,66 +1,76 @@
-.skill{
-    display: flex;
-    flex-direction: column;
-    // align-items: center; 
-    // padding: .2rem;
-    color: white;
-    background-color: rgba(255, 255, 255, .2);
-    // width: 23%;
-    border-radius: 1rem;
-    img{
-        width: 100%;
-        max-width: 8rem;
-        height: 8rem;
-    }
-    span{
-        font-weight: 500;
-        color: #fff;
-        margin-bottom: .5rem;
-    }
+.skill {
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  // padding: .2rem;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  // width: 23%;
+  border-radius: 1rem;
+  img {
+    width: 100%;
+    max-width: 8rem;
+    height: 8rem;
+  }
+  span {
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 0.5rem;
+  }
 }
 
 @media (max-width: 1045px) {
-    .skill{
-        padding: 1rem;
+  .skill {
+    padding: 1rem;
 
-        span{
-            font-weight: 600;
-            font-size: 1.2rem;
-        }
+    span {
+      font-weight: 600;
+      font-size: 1.2rem;
     }
+  }
 }
 
 @media (max-width: 858px) {
-    .skill{
-        padding: .7rem;
-    }
+  .skill {
+    padding: 0.7rem;
+  }
 }
 
 @media (max-width: 660px) {
-    .skill{
-        width: 20%;
-        padding: .4rem;
-    }
+  .skill {
+    width: 20%;
+    padding: 0.4rem;
+  }
 }
 
 @media (max-width: 500px) {
-    .skill{
-        width: 7rem;
-        padding: .4rem;
-    }
+  .skill {
+    width: 7rem;
+    padding: 0.4rem;
+  }
+}
+
+@media (max-width: 465px) {
+  .skill {
+    width: 26%;
+  }
 }
 
 @media (max-width: 435px) {
-    .skill{
-        width: 27%;
+  .skill {
+    width: 27%;
+  }
+}
 
-    }
+@media (max-width: 400px) {
+  .skill {
+    width: 40%;
+  }
 }
 
 @media (max-width: 380px) {
-    .skill{
-        width: 7rem;
-        padding: .5rem;
-    }
+  .skill {
+    width: 7rem;
+    padding: 0.5rem;
+  }
 }
-
