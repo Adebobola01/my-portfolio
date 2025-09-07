@@ -50,7 +50,7 @@ const About = (props: any) => {
         building a web2 or web3 application, I am here to help. */}
         {/* Let's collaborate and create impactful decentralized applications
                 that redefine the way we interact and transact in the digital world. */}
-        Hi, I'm Adebobola. I'm a software developer who loves bringing ideas to
+        Hi, I'm Adebobola, a software developer who loves bringing ideas to
         life on the web. My path started in Engineering, which gave me a deep
         appreciation for structured problem-solving. Today, I apply that same
         precision to building full-stack web applications. Whether I'm creating
