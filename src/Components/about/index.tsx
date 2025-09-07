@@ -30,7 +30,7 @@ const About = (props: any) => {
       <blockquote>
         <span>Hi, my name is</span>
         <h1>Adebobola Oyedunmade</h1>
-        <p>I'm a software developer👨‍💻</p>
+        {/* <p>I'm a software developer👨‍💻</p> */}
       </blockquote>
       <p>
         {/* I possess an in-depth understanding of smart contracts and the

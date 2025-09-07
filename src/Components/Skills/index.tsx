@@ -52,10 +52,10 @@ const Skills = () => {
           toolName="Tailwind CSS"
         />
         <Skill image={scssLogo} toolName="SASS/SCSS" />
-        <Skill image={shadcnLogo} toolName="ShadCn UI" />
-        <Skill image={framermotionLogo} toolName="Framer Motion" />
         <Skill image={jsLogo} toolName="Javascript" />
         <Skill image={tsLogo} toolName="Typescript" />
+        <Skill image={shadcnLogo} toolName="ShadCn UI" />
+        <Skill image={framermotionLogo} toolName="Framer Motion" />
         <Skill image={nodeLogo} toolName="NodeJS" />
         <Skill
           image={
