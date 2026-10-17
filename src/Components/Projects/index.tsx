@@ -8,6 +8,7 @@ import forkifyImg from "../../assets/images/forkify.png";
 import edtImg from "../../assets/images/edt.png";
 import certgoImg from "../../assets/images/certgo.png";
 import basicImg from "../../assets/images/basic.png";
+import waxelyImg from "../../assets/images/waxely.png";
 
 const Projects = () => {
   const domRef: any = useRef();
@@ -35,6 +36,14 @@ const Projects = () => {
     >
       <h2>My Projects</h2>
       <div className={styles.container}>
+        <Project
+          liveLink="https://app.waxely.com"
+          stacks={["ReactJs", "NestJs", "PostgreSQL", "AWS", "Docker"]}
+          codeLink="#"
+          name="Waxely"
+          image={waxelyImg}
+          description="A smart, guided tax calculation and compliance platform built to simplify tax preparation for individuals, freelancers, and businesses. It features automated deduction matching, step-by-step calculations, and a customized portal sync guide to ensure accurate filings and zero penalties."
+        />
         <Project
           liveLink="https://certgo.app"
           stacks={["Javascript", "Nodejs", "react"]}
