@@ -24,7 +24,7 @@ const Projects = () => {
     });
     observer.observe(domRef.current);
     if (currentEl) {
-      return observer.unobserve(currentEl);
+      return () => observer.unobserve(currentEl);
     }
   }, []);
   return (
