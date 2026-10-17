@@ -33,7 +33,7 @@ const Skills = () => {
     });
     observer.observe(domRef.current);
     if (currentEl) {
-      return () => observer.unobserve(domRef.current);
+      return () => observer.unobserve(currentEl);
     }
   }, []);
 

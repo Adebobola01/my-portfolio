@@ -1,11 +1,11 @@
 import React from "react";
-import * as Scroll from "react-scroll";
+// import * as Scroll from "react-scroll";
 import styles from "./navigation.module.scss";
 import ToggleBtn from "../ToggletBtn";
 
 const Navigation = (props: any) => {
   // const Link = Scroll.Link;
-  const scroll = Scroll.animateScroll;
+  //   const scroll = Scroll.animateScroll;
 
   // const scrollToB = () => {
   //     scroll.scrollToBottom();

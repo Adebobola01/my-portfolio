@@ -23,11 +23,9 @@ const Projects = () => {
       });
     });
     observer.observe(domRef.current);
-    return () => {
-      if (currentEl) {
-        return observer.unobserve(domRef.current);
-      }
-    };
+    if (currentEl) {
+      return observer.unobserve(currentEl);
+    }
   }, []);
   return (
     <section
