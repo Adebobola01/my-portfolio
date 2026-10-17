@@ -15,7 +15,7 @@ const Contact = (props: any) => {
     });
     observer.observe(domRef.current);
     if (currentEl) {
-      return () => observer.unobserve(domRef.current);
+      return () => observer.unobserve(currentEl);
     }
   }, [domRef, props]);
 
