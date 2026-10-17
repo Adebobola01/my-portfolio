@@ -1,27 +1,21 @@
 import React from "react";
 import styles from "./intro.module.scss";
-import itachImg from "../../assets/images/itachi.png";
-import devIcon from "../../assets/images/dev-icon.jpg";
 import Socials from "../socials";
 import myImage from "../../assets/images/adebobola.png";
 
 const Intro = () => {
-  const style = {
-    strokeDasharray: "9541.93, 9541.93",
-    strokeDashoffset: "7156",
-    transition: "fill 1s ease-in-out 0s",
-    stroke: "rgb(204, 204, 204)",
-    fill: "rgb(204, 204, 204)",
-  };
+  // const style = {
+  //   strokeDasharray: "9541.93, 9541.93",
+  //   strokeDashoffset: "7156",
+  //   transition: "fill 1s ease-in-out 0s",
+  //   stroke: "rgb(204, 204, 204)",
+  //   fill: "rgb(204, 204, 204)",
+  // };
 
   return (
     <section className={styles.intro}>
       <div className={styles.intro_container}>
-        <img
-          src={myImage}
-          alt="Adebobola's Image"
-          className={styles.intro_img}
-        />
+        <img src={myImage} alt="Adebobola" className={styles.intro_img} />
         <blockquote>
           <span>Hi, my name is</span>
           <h1>Adebobola Oyedunmade</h1>

@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import styles from "./projects.module.scss";
 import Project from "./Project";
-import itaImg from "../../assets/images/dev-icon.jpg";
+// import itaImg from "../../assets/images/dev-icon.jpg";
 import parodyImg from "../../assets/images/parody.jpg";
 import big3Img from "../../assets/images/big3 prev.jpg";
 import forkifyImg from "../../assets/images/forkify.png";
@@ -15,6 +15,7 @@ const Projects = () => {
   const [isVisible, setVisible] = useState<boolean>(false);
 
   useEffect(() => {
+    const currentEl = domRef.current;
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((e) => {
         // console.log("intersecting", isVisible)
@@ -23,7 +24,7 @@ const Projects = () => {
     });
     observer.observe(domRef.current);
     return () => {
-      if (domRef) {
+      if (currentEl) {
         return observer.unobserve(domRef.current);
       }
     };

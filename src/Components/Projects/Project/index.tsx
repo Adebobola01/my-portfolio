@@ -33,7 +33,7 @@ const Project = ({
         <div className={styles.stacks}>
           <div className={styles.stacks_container}>{stacksContent}</div>
           <div className={styles.nav}>
-            <a href={liveLink} target="_blank">
+            <a href={liveLink} target="_blank" rel="noreferrer">
               <span>Live</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +48,7 @@ const Project = ({
                 ></path>
               </svg>
             </a>
-            <a href={codeLink} target="_blank">
+            <a href={codeLink} target="_blank" rel="noreferrer">
               <span>Code</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"

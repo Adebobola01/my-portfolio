@@ -6,6 +6,7 @@ const About = (props: any) => {
   const [isVisible, setVisible] = useState(false);
 
   useEffect(() => {
+    const currentEl = domRef.current;
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((e) => {
         // console.log("intersecting", isVisible)
@@ -16,7 +17,9 @@ const About = (props: any) => {
       });
     });
     observer.observe(domRef.current);
-    return () => observer.unobserve(domRef.current);
+    if (currentEl) {
+      return () => observer.unobserve(domRef.current);
+    }
   }, []);
 
   return (
@@ -25,7 +28,7 @@ const About = (props: any) => {
       ref={domRef}
       id="about"
     >
-      <img src={myImage} alt="Adebobola's Image" className={styles.about_img} />
+      <img src={myImage} alt="Adebobola" className={styles.about_img} />
       <h2>About Me</h2>
       <blockquote>
         <span>Hi, my name is</span>
@@ -50,8 +53,8 @@ const About = (props: any) => {
         building a web2 or web3 application, I am here to help. */}
         {/* Let's collaborate and create impactful decentralized applications
                 that redefine the way we interact and transact in the digital world. */}
-        Hi, I'm Adebobola, a software developer who loves bringing ideas to
-        life on the web. My path started in Engineering, which gave me a deep
+        Hi, I'm Adebobola, a software developer who loves bringing ideas to life
+        on the web. My path started in Engineering, which gave me a deep
         appreciation for structured problem-solving. Today, I apply that same
         precision to building full-stack web applications. Whether I'm creating
         an interactive frontend or building a scalable API, my goal is always

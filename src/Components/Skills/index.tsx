@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import styles from "./skills.module.scss";
 import Skill from "./Skill";
 // import htmlLogo from "../../assets/images/itachi.png";
-import htmlLogo from "../../assets/images/icons8-html.svg";
+// import htmlLogo from "../../assets/images/icons8-html.svg";
 import cssLogo from "../../assets/images/icons8-css.svg";
 import jsLogo from "../../assets/images/icons8-javascript.svg";
 import tsLogo from "../../assets/images/icons8-typescript.svg";
@@ -24,6 +24,7 @@ const Skills = () => {
   const [isVisible, setVisible] = useState(false);
 
   useEffect(() => {
+    const currentEl = domRef.current;
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((e) => {
         // console.log("intersecting", isVisible)
@@ -31,7 +32,9 @@ const Skills = () => {
       });
     });
     observer.observe(domRef.current);
-    return () => observer.unobserve(domRef.current);
+    if (currentEl) {
+      return () => observer.unobserve(domRef.current);
+    }
   }, []);
 
   return (
