@@ -85,14 +85,6 @@ const Projects = () => {
           image={edtImg}
           description="A bloging website"
         />
-        <Project
-          name="Forkify"
-          image={forkifyImg}
-          description="A recipe application"
-          stacks={["HTML", "CSS", "JAVASCRIPT(MVP)"]}
-          liveLink="https://forkify-bobola.netlify.app/"
-          codeLink="https://github.com/Adebobola01/forkify"
-        />
       </div>
     </section>
   );
