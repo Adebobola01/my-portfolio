@@ -4,7 +4,6 @@ import Project from "./Project";
 // import itaImg from "../../assets/images/dev-icon.jpg";
 import parodyImg from "../../assets/images/parody.jpg";
 import big3Img from "../../assets/images/big3 prev.jpg";
-import forkifyImg from "../../assets/images/forkify.png";
 import edtImg from "../../assets/images/edt.png";
 import certgoImg from "../../assets/images/certgo.png";
 import basicImg from "../../assets/images/basic.png";
